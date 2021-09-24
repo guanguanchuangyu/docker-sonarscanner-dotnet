@@ -36,10 +36,11 @@ In order to integrate the image within a GH Actions step, you can just include i
 - name: SonarScanner
   run: |
     docker run --rm -v $PWD:/usr/app
-        -e SONAR_PROJECT_KEY={{ secrets.SONAR_PROJECT_KEY }}
-        -e SONAR_ORGANIZATION_KEY={{ secrets.SONAR_ORGANIZATION_KEY }}
-        -e SONAR_HOST_URL={{ secrets.SONAR_HOST_URL }}
-        -e SONAR_TOKEN={{ secrets.SONAR_TOKEN }}
+        -e SONAR_PROJECT_KEY={{ secrets.SONAR_PROJECT_KEY }} \
+        -e SONAR_ORGANIZATION_KEY={{ secrets.SONAR_ORGANIZATION_KEY }} \
+        -e SONAR_HOST_URL={{ secrets.SONAR_HOST_URL }} \
+        -e SONAR_TOKEN={{ secrets.SONAR_TOKEN }} \
+        dacamposol/sonarscanner-dotnet:5.0-alpine
 ```
 
 ### Integration with GitLab CI
