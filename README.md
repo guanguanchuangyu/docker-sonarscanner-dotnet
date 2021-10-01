@@ -20,7 +20,7 @@ docker run \
 dacamposol/sonarscanner-dotnet:5.0-alpine
 ```
 
-or, in case that you want to persist it in an easy way for future executions, modify the values under the `start-scan.sh` script and place it the root folder of your .NET project and make it runnable with the command `chmod +x start-scan.sh`.
+or, in case that you want to persist it in an easy way for future executions, modify the values under the `start-scan.sh` script, place it the root folder of your .NET project and make it runnable with the command `chmod +x start-scan.sh`.
 
 Then, perform the following command from the project folder:
 
