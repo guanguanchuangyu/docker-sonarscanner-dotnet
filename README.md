@@ -1,6 +1,6 @@
 # Sonar Scanner .NET - Docker Image
 
-The aim of this image is to provide a functional Docker image to run a scan and coverage report to be send to a custom SonarQube host.
+This image provides a functional a runner to scan and create a Sonar coverage report to be sent to a custom SonarQube host.
 
 This image is designed so it can be integrated in any CI/CD Pipeline within its own step.
 
