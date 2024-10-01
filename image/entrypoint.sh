@@ -4,9 +4,9 @@ set -e
 
 dotnet sonarscanner begin \
   /k:"${SONAR_PROJECT_KEY}" \
-  /o:"${SONAR_ORGANIZATION_KEY}" \
   /d:sonar.host.url="${SONAR_HOST_URL}" \
   /d:sonar.login="${SONAR_TOKEN}" \
+  /d:sonar.scanner.skipJreProvisioning=true \
   /d:sonar.cs.opencover.reportsPath=/coverage.opencover.xml
 
 dotnet restore
